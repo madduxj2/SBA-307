@@ -1,14 +1,22 @@
-/* Color palette */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
-    background-color: #fdfdfd;
-    font-family: Arial, sans-serif;
+    background:
+            linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+            url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 h1, h2 {
-    color: #3d405b;
+    color: #ffffff;
 }
 
-/* Flexbox */
+/* Navbar */
 .navbar-nav {
     display: flex;
     gap: 20px;
@@ -41,4 +49,33 @@ h1, h2 {
 
 .slide-in {
     animation: slideIn 1.5s ease-out;
+}
+
+/* Content panels */
+.content-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.intro-text {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Order form panel */
+.order-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.order-box h4,
+.order-box label {
+    color: #222;
+    font-weight: 600;
 }
