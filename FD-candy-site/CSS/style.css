@@ -1,0 +1,44 @@
+/* Color palette */
+body {
+    background-color: #fdfdfd;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+    color: #3d405b;
+}
+
+/* Flexbox */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in {
+    animation: slideIn 1.5s ease-out;
+}
