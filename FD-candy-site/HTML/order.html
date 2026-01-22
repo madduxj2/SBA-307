@@ -18,8 +18,11 @@
         <ul class="navbar-nav mx-auto">
             <li class="nav-item"><a class="nav-link text-white" href="index.html">Shop</a></li>
             <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="contact.html">Order</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="order.html">Order</a></li>
         </ul>
+        <button class="btn btn-light ms-3">
+            🛒
+        </button>
     </div>
 </nav>
 
@@ -27,6 +30,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6 slide-in">
             <div class="order-box">
+
                 <form>
                 <h4 class="mb-3">Select Your Candy</h4>
 
@@ -44,7 +48,6 @@
                         <option>Original</option>
                         <option>Wild Berry</option>
                         <option>Tropical</option>
-                        <option>Sour</option>
                     </select>
 
                     <!-- Quantity -->
@@ -101,18 +104,84 @@
                     <input type="number" class="form-control w-25"
                            placeholder="Qty" min="1">
                 </div>
+                 <!-- Candy 7 -->
+                    <div class="form-check d-flex align-items-cent mb-3">
+                    <input class="form-check-input me-2" type="checkbox" id="JollyRanchers">
+                    <label class="form-check-label me-3" for="JollyRanchers">
+                        Freeze-Dried JollyRanchers
+                    </label>
+                    <input type="number" class="form-control w-25"
+                           placeholder="Qty" min="1">
+                    </div>
+                    <!-- Candy 8 -->
+                    <div class="form-check d-flex align-items-cent mb-3">
+                        <input class="form-check-input me-2" type="checkbox" id="VarietyMix">
+                        <label class="form-check-label me-3" for="VarietyMix">
+                            Freeze-Dried Variety Mix
+                        </label>
+                        <input type="number" class="form-control w-25"
+                               placeholder="Qty" min="1">
+                    </div>
+
                 <hr>
 
-                <!-- Customer Info -->
-                <label>Email:</label>
-                <input type="email" class="form-control mb-2" required>
+
 
                 <label>Special Requests:</label>
-                <textarea class="form-control mb-3"></textarea>
+<br>
 
-                <!-- Inline CSS -->
+                    <!-- Form #1 -->
+                    <form>
+                        <label>Select Candy:</label>
+                        <select class="form-control mb-2" name="candy" required>
+                            <option value="" disabled selected>-- Please choose an option --</option>
+                            <option>Freeze-Dried Skittles</option>
+                            <option>Freeze-Dried Airheads</option>
+                            <option>Freeze-Dried Laffy-Taffy</option>
+                            <option>Freeze-Dried Jolly Ranchers</option>
+
+
+
+                        </select> <form>
+
+                        <div class="row mb-2 align-items-center">
+                            <!-- Checkbox -->
+                            <div class="col-sm-3 text-end">
+                                <label class="form-check-label" for="allOneFlavor">
+                                    Select Option:
+                                </label>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="allOneFlavor">
+                                    <label class="form-check-label" for="allOneFlavor">
+                                        All one flavor
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Textbox -->
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" placeholder="Specify Flavor">
+                            </div>
+                        </div>
+
+                        <!-- Smaller helper text -->
+                        <div class="row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <small class="text-muted">
+                                    If choosing Skittles, please specify which flavor (original, wild berry, tropical)
+                                    and which color.
+                                    <br>
+                                    Example: <em>Wild berry – all red</em>
+                                </small>
+                            </div>
+                        </div>
+
+                            <!-- Inline CSS -->
                 <button style="background-color:#3d405b; color:white;" class="btn">
-                    Submit Order
+                    Add to Cart
                 </button>
             </form>
 

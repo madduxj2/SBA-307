@@ -53,7 +53,7 @@ h1, h2 {
 
 /* Content panels */
 .content-box {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgb(138, 181, 129);
     padding: 30px;
     border-radius: 12px;
     max-width: 1000px;
@@ -68,7 +68,7 @@ h1, h2 {
 
 /* Order form panel */
 .order-box {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(138, 181, 129);
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.2);
